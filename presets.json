@@ -7,7 +7,8 @@
     "Keycool 84%" : "layouts/keycool-84.json",
     "Leopold FC660m" : "layouts/leopold-fc660m.json",
     "ErgoDox" : "layouts/ergodox.json",
-    "Atreus" : "layouts/atreus.json"
+    "Atreus" : "layouts/atreus.json",
+	"Kinesis Advantage" : "layouts/kinesis-advantage.json"
   },
 
   "keysets" : {
