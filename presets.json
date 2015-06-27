@@ -8,7 +8,11 @@
     "Leopold FC660m" : "layouts/leopold-fc660m.json",
     "ErgoDox" : "layouts/ergodox.json",
     "Atreus" : "layouts/atreus.json",
-	"Kinesis Advantage" : "layouts/kinesis-advantage.json"
+	"Kinesis Advantage" : "layouts/kinesis-advantage.json",
+	"Nonsense": "layouts/nonsense.json",
+	"SmallFry": "layouts/smallfry.json",
+	"SmallFry+1": "layouts/smallfry+1.json",
+	"SmallFry Thumbed": "layouts/smallfry-thumbed.json"
   },
 
   "keysets" : {

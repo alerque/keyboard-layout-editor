@@ -1,10 +1,23 @@
-#D1SC0tech Editor
+# D1SC0tech Editor
+
 ######A fork of [keyboard-layout-editor](https://github.com/ijprest/keyboard-layout-editor) by Ian Prest
 
 [![Join the chat at https://gitter.im/D1SC0tech/keyboard-layout-editor](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/D1SC0tech/keyboard-layout-editor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [D1SC0tech Editor](http://d1sc0tech.github.io/keyboard-layout-editor/kb.html) is a web
 application for designing custom layouts for mechanical keyboards.
+This fork includes @amj's work to allow easy export of 
+layouts as SVGs, ready to be cut/milled/whatever.  By default, it renders
+holes for the keyswitches compatible with CherryMX switches, with an option
+for the flanged holes that allow enthusiasts to modify their springs.
+
+However, the complications with spacebars, etc., make it very challenging to
+support all possible arrangements.  Still remaining/to be implemented:
+
+* Stepped Keys
+* Spacebar options
+* ISO style enter
+* stabilizers for keys larger than some number of units.
 
 ###Credits:
 - @ijprest for the original project and all the work that went into it
