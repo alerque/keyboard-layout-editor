@@ -3,12 +3,12 @@
 (function () {
 	"use strict";
 
-	/*function toJsonPretty(obj) {
+	function toJsonPretty(obj) {
 		var res = [];
-		obj.forEach(function(elem) { res.push($serial.toJsonL(elem));	});
+		obj.forEach(function(elem) { res.push(angular.toJson(elem));	});
 		return res.join(",\n")+"\n";
 	}
-	function fromJsonPretty(json) { return $serial.fromJsonL('['+json+']'); }*/
+	function fromJsonPretty(json) { return JSON.parse(json); }
 
 	// The angular module for our application
 	var kbApp = angular.module('kbApp', ["ngSanitize", "ui.utils"]);
@@ -190,7 +190,7 @@
 			//$timeout.cancel(serializedTimer); // this is slow, for some reason
 			$scope.deserializeException = "";
 			$scope.serializedRaw = $serial.serialize($scope.keyboard);
-			//$scope.serialized = toJsonPretty($scope.serializedRaw);
+			$scope.serialized = toJsonPretty($scope.serializedRaw);
 		}
 
 		$scope.deserializeAndRender([]);
@@ -602,8 +602,8 @@
 				try {
 					$scope.deserializeException = "";
 					transaction("rawdata", function() {
-						$scope.deserializeAndRender($scope.serializedRaw);
-						//$scope.deserializeAndRender(fromJsonPretty($scope.serialized));
+						//$scope.deserializeAndRender($scope.serializedRaw);
+						$scope.deserializeAndRender(fromJsonPretty($scope.serialized));
 						//$scope.serializedRaw = '['+$scope.serialized+']';
 					});
 					$scope.unselectAll();
