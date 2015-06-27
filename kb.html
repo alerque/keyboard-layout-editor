@@ -18,7 +18,7 @@ Forked from keyboard-layout-editor by Ian Prest
 <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="bower_components/urlon/src/urlon.js"></script>
 <script type="text/javascript" src="bower_components/forge/js/md5.js"></script>
-<script type="text/javascript" scr="bower_components/file-saver.js/FileSaver.js"></script>
+<script type="text/javascript" src="bower_components/file-saver.js/FileSaver.js"></script>
 <script type="text/javascript" src="js/color.js"></script>
 <script type="text/javascript" src="extensions.js"></script>
 <script type="text/javascript" src="render.js"></script>
@@ -98,6 +98,7 @@ Forked from keyboard-layout-editor by Ian Prest
 		<button type="button" class="btn btn-default" ng-class="{disabled:!canPaste()}" ng-click="paste()"><i class="fa fa-paste"></i> Paste</button>
 	</div>
 	<div class="btn-group pull-right">
+		<button type="button" class="btn btn-success" ng-click="saveFile()"><i class="fa fa-save"></i> Save File</button>
 		<button type="button" class="btn btn-success" ng-class="{disabled:!canSave()}" ng-click="save()"><i class="fa fa-save"></i> Save</button>
 	</div>
 	<div id="keyboard"
